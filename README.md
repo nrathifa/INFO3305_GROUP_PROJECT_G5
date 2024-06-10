@@ -8,7 +8,7 @@
 <br>
 <strong>GROUP 5</strong>
 <br>
-<strong>SECTION 2</strong> <br>
+<strong>SECTION 1</strong> <br>
 <strong>Instructed by: DR. MOHD KHAIRUL AZMI BIN HASSAN</strong> <br>
 
 |                NAME                |    MATRIC NUMBER   |

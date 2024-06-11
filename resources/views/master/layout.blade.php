@@ -67,6 +67,11 @@
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         <li>
+            <a href="{{ route('profile.show') }}">
+                {{ __('Profile') }}
+            </a>
+        </li>
+        <li>
           <form method="POST" action="{{ route('logout') }}" >
             @csrf
 

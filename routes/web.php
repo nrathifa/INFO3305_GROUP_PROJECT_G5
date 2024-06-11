@@ -19,3 +19,4 @@ Route::middleware([
 
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/adminpage', [HomeController::class, 'page'])->middleware(['auth','admin']);
+

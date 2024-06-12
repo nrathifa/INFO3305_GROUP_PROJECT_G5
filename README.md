@@ -57,8 +57,6 @@ The purposes of the application are to:
 
    &nbsp; 3.4 Additional Features
    - Search and Filter: Enable users to search for books by title and author and filter results by genre for easier navigation and discovery.
-   - Reading Progress Tracker: Let users update and track their reading progress for each book, including current page and total pages.
-   - Authors and Genres Management: Allow users to manage a list of authors and genres separately. 
 
    &nbsp; 3.5 Responsive Design
    - Web-Friendly: Ensure the application is fully responsive and optimized for mobile devices. 

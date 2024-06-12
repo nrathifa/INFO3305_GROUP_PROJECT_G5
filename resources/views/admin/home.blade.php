@@ -43,10 +43,10 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Book</a></li>
-          <li><a class="nav-link scrollto" href="#services">Genre</a></li>
-          <li><a class="nav-link scrollto " href="#work">Author</a></li>
+          <li><a class="nav-link scrollto active" href="/adminpage">Home</a></li>
+          <li><a class="nav-link scrollto" href="/book">Book</a></li>
+          <li><a class="nav-link scrollto" href="#genre">Genre</a></li>
+          <li><a class="nav-link scrollto " href="#author">Author</a></li>
           <li><a href="/admin.adminprofile">Profile</a></li>
         </ul>
           <form method="POST" action="{{ route('logout') }}" >

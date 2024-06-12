@@ -37,9 +37,9 @@ Route::get('/admin.adminprofile', function () {
 
 
 //Book Routes
-Route::get('admin/book', [BookController::class, 'index']) ->name('admin.book.book');
-Route::get('admin/book/add', [BookController::class, 'add']) ->name('admin.book.add-book');
-Route::post('admin/book/add', [BookController::class, 'store']) ->name('admin.book.store');
-Route::get('admin/book/edit/{book}', [BookController::class, 'edit']) ->name('admin.book.edit');
-Route::post('admin/book/edit/{book}', [BookController::class, 'update']) ->name('admin.book.update');
-Route::delete('admin/book/delete/{book}', [BookController::class, 'destroy'])->name('admin.book.delete');
+Route::get('book', [BookController::class, 'index']) ->name('book');
+Route::get('book/add', [BookController::class, 'add']) ->name('add-book');
+Route::post('book/add', [BookController::class, 'store']) ->name('store');
+Route::get('book/edit/{book}', [BookController::class, 'edit']) ->name('edit');
+Route::post('book/edit/{book}', [BookController::class, 'update']) ->name('update');
+Route::delete('book/delete/{book}', [BookController::class, 'destroy'])->name('delete');

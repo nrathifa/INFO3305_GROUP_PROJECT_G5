@@ -1,4 +1,4 @@
-@extends('admin.home')
+@extends('master.layout')
 @section('content')
 
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
@@ -23,9 +23,7 @@
                               <th scope="col">Author</th>
                               <th scope="col">Genre</th>
                               <th scope="col">Date Published</th>
-                              <th scope="col">View</th>
-                              <th scope="col">Edit</th>
-                              <th scope="col">Delete</th>
+                              <th scope="col">Action</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -36,18 +34,18 @@
                               <td>{{ $book->genre }}</td>
                               <td>{{ $book->date_published }}</td>
                               <td>
-                                <form action="{{ route('admin.book.delete', $book->title) }}" method="POST" style="display: inline;">
+                                <form action="{{ route('delete', $book->title) }}" method="POST" style="display: inline;">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger" style="margin-right: 5px;">Delete</button>
                                 </form>
-                                <a href="{{ route('admin.book.edit', $book->title) }}" class="btn btn-primary" style="display: inline;">Edit</a>
+                                <a href="{{ route('edit', $book->title) }}" class="btn btn-primary" style="display: inline;">Edit</a>
                             </td>
                         </tr>
                         @endforeach
                           </tbody>
                         </table>
-                        <a href="{{ route('admin.book.add-book') }}" class="btn btn-success text" role="button">Add New Book</a>
+                        <a href="{{ route('add-book') }}" class="btn btn-success text" role="button">Add New Book</a>
                       </div>
                     </div>
                   </div>
@@ -57,6 +55,6 @@
           </div>
         </div>
       </div>
-    </section><
+    </section>
 
 @endsection

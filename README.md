@@ -72,8 +72,12 @@ The purposes of the application are to:
   &nbsp; 4.2 User Delete
   
   ![userdelete drawio](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170921758/1e2bdae7-f840-41d5-bd8d-ebee2d4db7a0)
+
+  &nbsp; 4.3 Admin Login & Add
+
+  ![adminlogin drawio](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170921758/51106f5d-48de-4212-bdea-0e591ef6f6ff)
   
-  &nbsp; 4.3 Admin Delete
+  &nbsp; 4.4 Admin Delete
   
   ![admindelete drawio](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170921758/12ad9399-498f-45e8-ade0-ac4b2d2a035d)
   

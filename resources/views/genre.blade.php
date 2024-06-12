@@ -51,7 +51,7 @@
               <div id="contact" class="box-shadow-full">
                 <div class="row">
                   <h5 class="title-left text-center">
-                        <strong>GENRE/CATEGORIES</strong>
+                        <strong>GENRE</strong>
                     </h5>
                 </div>
                 <br>

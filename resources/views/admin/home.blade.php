@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>DevFolio Bootstrap Portfolio Template - Index</title>
+  <title>Libellum: Your Bibloteca</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -37,7 +37,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">DevFolio</a></h1>
+      <h1 class="logo"><a href="/home">Libellum</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -67,15 +67,14 @@
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         <li>
-        <a href="{{ route('profile.show') }}">
-            {{ __('Profile') }}
+            <a href="/admin.adminprofile">Profile</a>
         </a>
         </li>
         <li>
           <form method="POST" action="{{ route('logout') }}" >
             @csrf
 
-            <input type="submit" value="Logout">
+            <input type="submit" value="Logout" class="btn btn-primary">
         </form>
         </li>
         </ul>

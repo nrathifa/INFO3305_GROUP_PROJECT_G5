@@ -14,7 +14,7 @@
                                     <h5 class="title-left">Edit Book</h5>
                                     <br>
                                     <div>
-                                        <form method="POST" action="{{ route('update', ['title' => $book->title]) }}">
+                                        <form method="POST" action="{{ route('book.update', ['title' => $book->title]) }}">
                                             @csrf
                                             @method('POST')
                                             <div class="mb-3">

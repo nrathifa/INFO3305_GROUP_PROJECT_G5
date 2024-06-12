@@ -4,13 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Books;
+use App\Models\UserLibrary;
 
 class ReadersController extends Controller
 {
     public function index()
     {
         $books = Books::all(); // Assuming Book is your model
-        return view('mainpage', compact('books'));
+        return view('userbook', compact('books'));
     }
 
     /*public function add($title)
@@ -19,4 +20,10 @@ class ReadersController extends Controller
 
         return view('userlibrary', compact('data','title'));
     }*/
+
+    public function shiftdata()
+    {
+        $books = Books::get();
+        dd($books);
+    }
 }

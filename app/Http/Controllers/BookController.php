@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Books;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Book;
 
 class BookController extends Controller
 {
@@ -14,15 +13,15 @@ class BookController extends Controller
     public function index()
     {
         $books = Books::all(); // Assuming Book is your model
-        return view('book', compact('books'));
+        return view('admin.book.book', compact('books'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function add()
     {
-        //
+        return view('admin.book.add-book');
     }
 
     /**
@@ -30,56 +29,55 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'title' => 'required',
-            'author' => 'required',
-            'genre' => 'required',
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'author' => 'required|string|max:255',
+            'genre' => 'required|string|max:255',
             'date_published' => 'required|date',
         ]);
 
-        Book::create($request->all());
+        Books::create($validated);
 
-        return redirect()->route('books.index')
-                         ->with('success', 'Book created successfully.');
+        return redirect()->route('admin.book.book')->with('success', 'Book added successfully.');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $title)
-    {
-        $book = Books::find($title);
-        return view('books.show', compact('book'));
-    }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $title)
+    public function edit(Books $book)
     {
-        $book = Books::find($title);
-        return view('books.edit', compact('book'));
+        return view('admin.book.edit', compact('book'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Books $book)
     {
-        //
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'author' => 'required|string|max:255',
+            'genre' => 'required|string|max:255',
+            'date_published' => 'required|date',
+        ]);
+
+        $book->update($validated);
+
+        return redirect()->route('admin.book.book')->with('success', 'Book updated successfully.');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $title)
+    public function destroy(Books $book)
     {
-        $book = Books::where('title', $title)-first();
-        if ($book) {
-            $book->delete();
-        }
-        return redirect()->route('books.index');
-
-
+        $book->delete();
+        return redirect()->route('admin.book.book')->with('success', 'Book deleted successfully.');
+    }
+    public function show()
+    {
+        $book = Books::all();
+        return view('admin.book', compact('book'));
     }
 }

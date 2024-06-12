@@ -1,4 +1,4 @@
-@extends('master.layout')
+@extends('admin.home')
 @section('content')
 
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
@@ -29,36 +29,25 @@
                             </tr>
                           </thead>
                           <tbody>
-                            @foreach($books as $index => $book)
+                            @foreach($books as $book)
                             <tr>
                               <td>{{ $book->title }}</td>
                               <td>{{ $book->author }}</td>
                               <td>{{ $book->genre }}</td>
                               <td>{{ $book->date_published }}</td>
                               <td>
-                                <form action="{{route('book.show', $book->title) }}" method="POST">
-                                    @csrf
-                                    <button type="submit" class="btn btn-danger" style="background-color:blue; border:none">View</button>
-                                </form>
-                              </td>
-                              <td>
-                                <form action="{{route('book.edit', $book->title) }}" method="POST">
-                                    @csrf
-                                    <button type="submit" class="btn btn-danger" style="background-color:blue; border:none">Edit</button>
-                                </form>
-                              </td>
-                              <td>
-                                <form action="{{route('book.destroy', $book->title) }}" method="POST">
+                                <form action="{{ route('admin.book.delete', $book->title) }}" method="POST" style="display: inline;">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                    <button type="submit" class="btn btn-danger" style="margin-right: 5px;">Delete</button>
                                 </form>
-                              </td>
-                            </tr>
-                            @endforeach
+                                <a href="{{ route('admin.book.edit', $book->title) }}" class="btn btn-primary" style="display: inline;">Edit</a>
+                            </td>
+                        </tr>
+                        @endforeach
                           </tbody>
                         </table>
-                        <a href="/add-book" class="btn btn-success text" role="button">Add New Book</a>
+                        <a href="{{ route('admin.book.add-book') }}" class="btn btn-success text" role="button">Add New Book</a>
                       </div>
                     </div>
                   </div>

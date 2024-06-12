@@ -28,6 +28,11 @@
                         List of Books
                       </h5>
                       <br>
+                      <form action="{{ url('search') }}" method="GET">
+                        <input type="search" name="search" placeholder="Search for Name, Genre or Author" class="form-control w-100"><br>
+                        <input type="submit" value="Search" class="btn btn-primary">
+                    </form>
+                    <br><br>
                       <div>
                         <table class="table">
                           <thead>
@@ -36,7 +41,7 @@
                               <th scope="col">Author</th>
                               <th scope="col">Genre</th>
                               <th scope="col">Date Published</th>
-                              <th scope="col">Add Book</th>
+                              {{--<th scope="col">Add Book</th>--}}
                             </tr>
                           </thead>
                           <tbody>
@@ -46,6 +51,7 @@
                               <td>{{ $book->author }}</td>
                               <td>{{ $book->genre }}</td>
                               <td>{{ $book->date_published }}</td>
+                              {{--<td><a href="userlibrary/{{$value['title']}}">Profile</a></td>--}}
                               {{--
                               <td>
                                 <form action="{{ route('delete', $book->title) }}" method="POST" style="display: inline;">

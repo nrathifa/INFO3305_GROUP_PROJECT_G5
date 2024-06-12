@@ -15,7 +15,7 @@
       </div>
     </div>
   </div><!-- End Hero Section -->
-{{--
+
   <main id="main">
 
     <!-- ======= Contact Section ======= -->
@@ -27,14 +27,14 @@
               <div class="contact-mf">
                 <div id="contact" class="box-shadow-full">
                   {{--<div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6"> --}}
                       <div class="title-box-2">
                         <h5 class="title-left">
                           List of Books
                         </h5>
                       </div>
 
-                      {{--<button onclick="document.location='shift-add'" type="button" class="btn btn-primary">Add Book</button><br><br>
+                      {{--<button onclick="document.location='shift-add'" type="button" class="btn btn-primary">Add Book</button><br><br>--}}
 
                       <div>
                           <table class="table table-striped table-dark">
@@ -44,8 +44,7 @@
                                     <th scope="col">Author</th>
                                     <th scope="col">Genre</th>
                                     <th scope="col">Date Published</th>
-                                    <th scope="col">View</th>
-                                    <th scope="col">Add Book</th>
+                                    <th scope="col">Delete Book</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -55,13 +54,6 @@
                                   <td>{{ $book->author }}</td>
                                   <td>{{ $book->genre }}</td>
                                   <td>{{ $book->date_published }}</td>
-                                {{--
-                                  <td>
-                                    <form method="POST" action="{{ route('userlibrary/{{$value['title']}}') }}" >
-                                        @csrf
-
-                                        <input type="submit" value="Logout" class="btn btn-primary">
-                                  </td>
                                 </tr>
                                 @endforeach
                                 {{--<tr>
@@ -75,12 +67,12 @@
                                   <td>Larry</td>
                                   <td>the Bird</td>
                                   <td>@twitter</td>
-                                </tr>
+                                </tr>--}}
                               </tbody>
                             </table>
                       </div>
                   {{--  </div>
-                  </div> 
+                  </div> --}}
                 </div>
               </div>
             </div>
@@ -89,5 +81,5 @@
       </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
---}}
+
 @endsection

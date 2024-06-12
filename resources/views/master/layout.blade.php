@@ -51,7 +51,7 @@
           <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
           --}}
           <li><a class="nav-link scrollto active" href="/adminpage">Home</a></li>
-          <li><a class="nav-link scrollto" href="/book">Book</a></li>
+          <li><a class="nav-link scrollto" href="/userbook">Book</a></li>
           <li><a href="/genre">Genre</a></li>
           <li><a class="nav-link scrollto " href="#author">Author</a></li>
           <li>

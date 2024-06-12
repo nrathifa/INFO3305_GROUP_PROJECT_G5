@@ -11,7 +11,7 @@ class GenreController extends Controller
      */
     public function checkGenre()
     {
-        $genres = ['Action', 'Comedy', 'Drama', 'Sci-Fi'];
+        $genres = ['Action', 'Comedy', 'Drama', 'Sci-Fi', 'Adventure', 'Comedy', 'Slice of Life', 'Mystery', 'Historical', 'Supernatural', 'Crime', 'Romance'];
         return view('genre', compact('genres')); //VIEW NAME
     }
 

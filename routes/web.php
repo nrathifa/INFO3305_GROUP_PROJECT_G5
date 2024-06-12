@@ -46,10 +46,10 @@ Route::get('/readerprofile', function () {
 //Book Routes
 Route::get('book', [BookController::class, 'index']) ->name('book');
 Route::get('add-book', [BookController::class, 'add']) ->name('add-book');
-Route::post('book/add', [BookController::class, 'store']) ->name('store');
-Route::get('book/edit/{title}', [BookController::class, 'edit'])->name('edit');
-Route::post('book/edit/{title}', [BookController::class, 'update'])->name('update');
-Route::delete('book/delete/{title}', [BookController::class, 'destroy'])->name('delete');
+Route::post('add-book', [BookController::class, 'store']) ->name('store');
+Route::get('edit/{book}', [BookController::class, 'edit'])->name('edit');
+Route::post('edit/{book}', [BookController::class, 'update'])->name('update');
+Route::delete('delete/{book}', [BookController::class, 'destroy'])->name('delete');
 
 //mainpage list of books
 Route::get('userbook', [ReadersController::class, 'index']) ->name('userbook');

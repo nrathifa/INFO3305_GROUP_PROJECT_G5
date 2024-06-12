@@ -45,8 +45,13 @@ class BookController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Books $book)
+    public function edit($title)
     {
+        $book = Books::where('title', $title)->first();
+        if (!$book) {
+            return redirect()->route('book')->with('error', 'Book not found.');
+        }
+
         return view('edit', compact('book'));
     }
 

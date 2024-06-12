@@ -52,5 +52,5 @@ Route::post('book/edit/{title}', [BookController::class, 'update'])->name('updat
 Route::delete('book/delete/{title}', [BookController::class, 'destroy'])->name('delete');
 
 //mainpage list of books
-Route::get('/home', [ReadersController::class, 'index']) ->name('book');
+Route::get('/mainpage', [ReadersController::class, 'index']) ->name('book');
 //Route::get('/userlibrary{title}', 'ReadersController@add');

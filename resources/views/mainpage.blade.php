@@ -49,6 +49,7 @@
                                 </tr>
                               </thead>
                               <tbody>
+                                {{--
                                 @foreach($books as $book)
                                 <tr>
                                   <td>{{ $book->title }}</td>
@@ -61,9 +62,9 @@
                                         @csrf
 
                                         <input type="submit" value="Logout" class="btn btn-primary">
-                                  </td>--}}
+                                  </td>
                                 </tr>
-                                @endforeach
+                                @endforeach--}}
                                 {{--<tr>
                                   <th scope="row">2</th>
                                   <td>Jacob</td>

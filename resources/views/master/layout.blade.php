@@ -37,7 +37,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Libellum</a></h1>
+      <h1 class="logo"><a href="/home">Libellum</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -55,7 +55,7 @@
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
                   <li><a href="#">Deep Drop Down 2</a></li>
                   <li><a href="#">Deep Drop Down 3</a></li>
                   <li><a href="#">Deep Drop Down 4</a></li>
@@ -69,15 +69,13 @@
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         <li>
-            <a href="{{ route('profile.show') }}">
-                {{ __('Profile') }}
-            </a>
+            <a href="/readerprofile">Profile</a>
         </li>
         <li>
           <form method="POST" action="{{ route('logout') }}" >
             @csrf
 
-            <input type="submit" value="Logout">
+            <input type="submit" value="Logout" class="btn btn-primary">
         </form>
         </li>
         </ul>

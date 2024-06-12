@@ -1,4 +1,4 @@
-@extends('master.layout')
+@extends('admin.home')
 @section('content')
 
 <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/bookshelf.jpg)">

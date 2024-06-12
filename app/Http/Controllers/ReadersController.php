@@ -14,16 +14,45 @@ class ReadersController extends Controller
         return view('userbook', compact('books'));
     }
 
-    /*public function add($title)
+    public function add($title)
     {
         $data = ReadersController::find($title);
 
-        return view('userlibrary', compact('data','title'));
-    }*/
+        foreach ($books as $key => $value) {
+            UserLibrary::create([
+                'title'=>$value->title,
+                'author'=>$value->author,
+                'genre'=>$value->genre,
+                'date_published'=>$value->date_published,
+            ]);
 
-    public function shiftdata()
+            return redirect('userlibrary');
+        }
+
+        //return view('userlibrary', compact('data','title'));
+    }
+
+    /*public function shiftdata()
     {
         $books = Books::get();
-        dd($books);
+
+        foreach ($books as $key => $value) {
+            UserLibrary::create([
+                'title'=>$value->title,
+                'author'=>$value->author,
+                'genre'=>$value->genre,
+                'date_published'=>$value->date_published,
+            ]);
+
+            return 'Shift successfully';
+        }
+    }*/
+
+    public function search(Request $request)
+    {
+        $search = $request->search;
+        $books = books::where('title','like', '%' .$search. '%')->orWhere('author','like', '%' .$search. '%')->orWhere('genre','like', '%' .$search. '%')->get();
+
+        return view('userbook', compact('books'));
     }
 }

@@ -50,7 +50,7 @@
           <li><a class="nav-link scrollto " href="#work">Work</a></li>
           <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
           --}}
-          <li><a class="nav-link scrollto active" href="/adminpage">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="/userbook">Book</a></li>
           <li><a href="/genre">Genre</a></li>
           <li><a class="nav-link scrollto " href="#author">Author</a></li>

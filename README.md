@@ -84,23 +84,25 @@ The purposes of the application are to:
 ### 7.0 CHALLENGES/DIFFICULTIES
 Here are some of the key issues we have faced:
 
-# 1. Time Constraints:
+##### 1. Time Constraints:
 
-Limited Time: With the project assigned towards the end of the semester, we had very little time to work on it. The tight deadline has been one of the most significant obstacles.
+##### Limited Time: 
+With the project assigned towards the end of the semester, we had very little time to work on it. The tight deadline has been one of the most significant obstacles.
 Multiple Assignments: As the final week approaches, we are swamped with multiple assignments and exams from other courses. Balancing these demands has been incredibly challenging.
 
-Technical Issues:
+##### Technical Issues:
 Laptop Problems: Some team members have encountered technical issues with their laptops, which has hindered their ability to contribute effectively and have to shared our laptop.This has led to delays and added stress.
 Communication Barriers: Confusion and misunderstanding of task and how the website work. This led to change of task because some of us not able to make it.
 
-Remote Communication: Our primary mode of communication has been through WhatsApp, which, while convenient, has its limitations. Miscommunications and delays in response times have been common.
+##### Remote Communication: 
+Our primary mode of communication has been through WhatsApp, which, while convenient, has its limitations. Miscommunications and delays in response times have been common.
 Lack of Face-to-Face Interaction: Not being able to meet in person has made it difficult to brainstorm, troubleshoot, and collaborate effectively.
-Time Management:
 
+##### Time Management:
 Poor Time Management: We have struggled with managing our time efficiently. Procrastination and last-minute rushes have been frequent, leading to suboptimal work quality.
 Competing Priorities: Balancing the demands of this project with other commitments, such as personal responsibilities and extracurricular activities, has been tough.
-Programmatic Challenges:
 
+##### Programmatic Challenges:
 Complexity of the Project: The technical complexity of the project has been greater than anticipated. Debugging and troubleshooting issues have taken more time than expected.
 Learning Curve: Some team members needed to familiarize themselves with new technologies and frameworks, adding to the time required to complete tasks.
 

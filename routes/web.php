@@ -43,6 +43,6 @@ Route::post('book/add', [BookController::class, 'store']) ->name('store');
 Route::get('book/edit/{title}', [BookController::class, 'edit']) ->name('edit');
 Route::post('book/edit/{title}', [BookController::class, 'update']) ->name('update');
 Route::delete('book/delete/{title}', [BookController::class, 'destroy'])->name('delete');
-Route::delete('/books/{title}', [BookController::class, 'destroy'])->name('books.destroy');
+Route::delete('/books/{title}', [BookController::class, 'destroy'])->name('destroy');
 
 

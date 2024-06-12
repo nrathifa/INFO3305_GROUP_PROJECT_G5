@@ -14,40 +14,6 @@ class ReadersController extends Controller
         return view('userbook', compact('books'));
     }
 
-    public function add($title)
-    {
-        $data = ReadersController::find($title);
-
-        foreach ($books as $key => $value) {
-            UserLibrary::create([
-                'title'=>$value->title,
-                'author'=>$value->author,
-                'genre'=>$value->genre,
-                'date_published'=>$value->date_published,
-            ]);
-
-            return redirect('userlibrary');
-        }
-
-        //return view('userlibrary', compact('data','title'));
-    }
-
-    /*public function shiftdata()
-    {
-        $books = Books::get();
-
-        foreach ($books as $key => $value) {
-            UserLibrary::create([
-                'title'=>$value->title,
-                'author'=>$value->author,
-                'genre'=>$value->genre,
-                'date_published'=>$value->date_published,
-            ]);
-
-            return 'Shift successfully';
-        }
-    }*/
-
     public function search(Request $request)
     {
         $search = $request->search;

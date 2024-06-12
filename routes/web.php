@@ -53,6 +53,4 @@ Route::delete('delete/{book}', [BookController::class, 'destroy'])->name('delete
 
 //mainpage list of books
 Route::get('userbook', [ReadersController::class, 'index']) ->name('userbook');
-//Route::get('userlibrary/{title}', 'ReadersController@add');
-//Route::get('shift-data', [ReadersController::class, 'shiftdata']) ->name('shiftdata');
 Route::get('/search', [ReadersController::class, 'search']);

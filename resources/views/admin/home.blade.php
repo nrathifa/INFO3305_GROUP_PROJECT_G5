@@ -43,12 +43,21 @@
 
       <nav id="navbar" class="navbar">
         <ul>
+          {{--<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link" href="/genre">GENRE</a></li>
+
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#work">Work</a></li>
+          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+          --}}
           <li><a class="nav-link scrollto active" href="/adminpage">Home</a></li>
           <li><a class="nav-link scrollto" href="/book">Book</a></li>
-          <li><a class="nav-link scrollto" href="#genre">Genre</a></li>
+          <li><a class="/admin.admingenre" href="/genre">Genre</a></li>
           <li><a class="nav-link scrollto " href="#author">Author</a></li>
-          <li><a href="/admin.adminprofile">Profile</a></li>
-        </ul>
+          <li>
+                <a href="/admin.adminprofile">Profile</a>
+          </li>
+          <li>
           <form method="POST" action="{{ route('logout') }}" >
             @csrf
 

@@ -1,6 +1,6 @@
 @extends('master.layout')
-@section('content')
 
+@section('content')
 <section id="edit" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">

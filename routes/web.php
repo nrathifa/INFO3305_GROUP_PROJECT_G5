@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReadersController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\GenreController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -19,9 +20,16 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::get('/genre', function(){
+    return view('genre');
+});
+
+
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/adminpage', [HomeController::class, 'page'])->middleware(['auth','admin']);
 Route::get('/readerprofile', [ReadersController::class, 'index']);
+Route::get('/genre', [GenreController::class, 'checkGenre']);
+Route::get('/genres/{genre}', [GenreController::class, 'show'])->name('genre.show');
 
 Route::get('/admin.adminprofile', function () {
     return view('admin.adminprofile');

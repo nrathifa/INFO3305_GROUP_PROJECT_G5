@@ -31,7 +31,6 @@ Route::get('/userlibrary', function(){
 
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/adminpage', [HomeController::class, 'page'])->middleware(['auth','admin']);
-Route::get('/readerprofile', [ReadersController::class, 'index']);
 Route::get('/genre', [GenreController::class, 'checkGenre']);
 Route::get('/genres/{genre}', [GenreController::class, 'show'])->name('genre.show');
 

@@ -45,7 +45,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a id="amstrong-link" class="nav-link" href="/genre">GENRE</a></li>
+          <li><a class="nav-link" href="/genre">GENRE</a></li>
           {{--
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#work">Work</a></li>

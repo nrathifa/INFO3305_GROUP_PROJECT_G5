@@ -44,8 +44,7 @@
                                     <th scope="col">Author</th>
                                     <th scope="col">Genre</th>
                                     <th scope="col">Date Published</th>
-                                    <th scope="col">View</th>
-                                    <th scope="col">Add Book</th>
+                                    <th scope="col">Delete Book</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -55,13 +54,6 @@
                                   <td>{{ $book->author }}</td>
                                   <td>{{ $book->genre }}</td>
                                   <td>{{ $book->date_published }}</td>
-                                  {{--
-                                  <td>
-                                    <form method="POST" action="{{ route('userlibrary/{{$value['title']}}') }}" >
-                                        @csrf
-
-                                        <input type="submit" value="Logout" class="btn btn-primary">
-                                  </td>--}}
                                 </tr>
                                 @endforeach
                                 {{--<tr>

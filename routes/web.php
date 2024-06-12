@@ -24,6 +24,10 @@ Route::get('/genre', function(){
     return view('genre');
 });
 
+Route::get('/userlibrary', function(){
+    return view('userlibrary');
+});
+
 
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/adminpage', [HomeController::class, 'page'])->middleware(['auth','admin']);
@@ -33,6 +37,10 @@ Route::get('/genres/{genre}', [GenreController::class, 'show'])->name('genre.sho
 
 Route::get('/admin.adminprofile', function () {
     return view('admin.adminprofile');
+});
+
+Route::get('/readerprofile', function () {
+    return view('readerprofile');
 });
 
 
@@ -45,4 +53,6 @@ Route::post('book/edit/{title}', [BookController::class, 'update']) ->name('upda
 Route::delete('book/delete/{title}', [BookController::class, 'destroy'])->name('delete');
 
 
-
+//mainpage list of books
+Route::get('/home', [ReadersController::class, 'index']) ->name('book');
+//Route::get('/userlibrary{title}', 'ReadersController@add');

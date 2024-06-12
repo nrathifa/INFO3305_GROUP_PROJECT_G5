@@ -45,7 +45,7 @@ Route::get('/readerprofile', function () {
 
 //Book Routes
 Route::get('book', [BookController::class, 'index']) ->name('book');
-Route::get('book/add', [BookController::class, 'add']) ->name('add-book');
+Route::get('add-book', [BookController::class, 'add']) ->name('add-book');
 Route::post('book/add', [BookController::class, 'store']) ->name('store');
 Route::get('book/edit/{title}', [BookController::class, 'edit'])->name('edit');
 Route::post('book/edit/{title}', [BookController::class, 'update'])->name('update');

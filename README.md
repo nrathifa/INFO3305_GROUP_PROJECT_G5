@@ -63,24 +63,19 @@ The purposes of the application are to:
    &nbsp; 3.5 Responsive Design
    - Web-Friendly: Ensure the application is fully responsive and optimized for mobile devices. 
 
-### 4.0 ENTITY-RELATIONSHIP DIAGRAM (ERD)
+### 4.0 SEQUENCE DIAGRAM
 
-<img width="779" alt="erd2" src="https://github.com/nrathifa/An-Online-Book-Library---Group-5/assets/152828160/4eae30b1-5f24-42a2-9413-14199cd666a2">
+  &nbsp; 4.1 User Login & Search 
 
+  ![userlogin drawio](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170921758/cd5384ee-b03b-437b-8840-b49a775ed99c)
 
-### 5.0 SEQUENCE DIAGRAM
-
-  &nbsp; 5.1 Login, Add New Book and View
+  &nbsp; 4.2 User Delete
   
-  ![Web App Sequence Diagram drawio (1)](https://github.com/nrathifa/An-Online-Book-Library---Group-5/assets/170921758/dd2d2a68-8789-456a-8720-db8605bace9c)
-
-  &nbsp; 5.2 View and Edit
+  ![userdelete drawio](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170921758/1e2bdae7-f840-41d5-bd8d-ebee2d4db7a0)
   
-  ![Web App Sequence Diagram drawio (3)](https://github.com/nrathifa/An-Online-Book-Library---Group-5/assets/170921758/929d8a5b-258c-487a-b796-95ee11fba47a)
-
-  &nbsp; 5.3 View and Delete
-
-  ![Web App Sequence Diagram drawio (2)](https://github.com/nrathifa/An-Online-Book-Library---Group-5/assets/170921758/2b2344d0-2d14-43da-b1b4-d229a2e5807f)
+  &nbsp; 4.3 Admin Delete
+  
+  ![admindelete drawio](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170921758/12ad9399-498f-45e8-ade0-ac4b2d2a035d)
   
 ### 6.0 REFERENCES
   1. Sarwar, Fraz. (2024, April 11). Library-Management-System-Sequence-Diagram 3. Retrieved from https://www.edrawmax.com/templates/1050618/

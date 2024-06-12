@@ -1,4 +1,4 @@
-@extends('admin.home')
+@extends('master.layout')
 @section('content')
 
 <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/bookshelf.jpg)">
@@ -52,7 +52,12 @@
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger" style="margin-right: 5px;">Delete</button>
                                 </form>
-                                <a href="{{ route('edit', $book->title) }}" class="btn btn-primary" style="display: inline;">Edit</a>
+
+                                <form action="{{ route('edit', $book->title) }}" method="POST" style="display: inline;">
+                                    @csrf
+                                    @method('POST')
+                                    <button type="submit" class="btn btn-primary" style="margin-right: 5px;">Edit</button>
+                                </form>
                             </td>
                         </tr>
                         @endforeach

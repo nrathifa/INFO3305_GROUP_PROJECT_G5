@@ -58,8 +58,13 @@ class BookController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Books $book)
+    public function update(Request $request, $title)
     {
+        $book = Books::where('title', $title)->first();
+    if (!$book) {
+        return redirect()->route('book')->with('error', 'Book not found.');
+    }
+
         $validated = $request->validate([
             'title' => 'required|string|max:255',
             'author' => 'required|string|max:255',

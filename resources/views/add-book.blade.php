@@ -1,4 +1,4 @@
-@extends('admin.home')
+@extends('master.layout')
 @section('content')
 
 <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/bookshelf.jpg)">
@@ -27,7 +27,7 @@
                         <h5 class="title-left">Add New Book</h5>
                         <br>
                         <div>
-                            <form method="POST" action="{{ route('add-book') }}">
+                            <form method="POST" action="{{ route('store') }}">
                                 @csrf
                                 <div class="form-group">
                                     <label for="title" class="form-label">Title</label>

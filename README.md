@@ -79,9 +79,25 @@ The purposes of the application are to:
   
   ![admindelete drawio](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170921758/12ad9399-498f-45e8-ade0-ac4b2d2a035d)
   
-### 6.0 PROJECT SYSTEM CAPTURED SCREEN
+### 5.0 PROJECT SYSTEM CAPTURED SCREEN
 
-### 7.0 CHALLENGES/DIFFICULTIES
+    &nbsp; 5.1 Admin Page 
+    
+    &nbsp; 5.2 Add book record
+
+    &nbsp; 5.3 Admin Profile
+
+    &nbsp; 5.4 User Page 
+    
+    &nbsp; 5.5 View book library
+
+    &nbsp; 5.5 Genre
+
+     &nbsp; 5.6 User Profile
+    
+    
+
+### 6.0 CHALLENGES/DIFFICULTIES
 Here are some of the key issues we have faced:
 
 ##### 1. Time Constraints:

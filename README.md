@@ -83,18 +83,40 @@ The purposes of the application are to:
 
 &nbsp; 5.1 Admin Page 
 
+![image](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170484794/01f467ed-1eeb-4bbe-bb59-8e711179078b)
+
 &nbsp; 5.2 Add book record
+
+![image](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170484794/1a037ce0-5680-480f-a0b2-8210f4ec00ec)
 
 &nbsp; 5.3 Admin Profile
 
+![image](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170484794/46e71d2d-3934-44c4-9529-c1f439d363bc)
+
 &nbsp; 5.4 User Page 
+
+![image](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170484794/d2b79db3-68b5-41a6-9e49-586c1b6ec265)
     
 &nbsp; 5.5 View book library
 
-&nbsp; 5.5 Genre
+![image](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170484794/4798ec7c-2df6-4f43-ba79-928e9c7fbbb6)
 
-&nbsp; 5.6 User Profile
-    
+&nbsp; 5.6 Search by Title, Author or Genre
+
+![image](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170484794/2712cd16-fd7e-430e-8eba-60cd205f4a82)
+
+![image](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170484794/b64f829c-a43f-4ce8-aed1-9921cd2ae9fc)
+
+![image](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170484794/28e17767-e20e-4cb2-a4f7-8413779c09af)
+
+&nbsp; 5.6 Genre
+
+![image](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170484794/0343e56b-142c-4303-8500-4d9628829096)
+
+&nbsp; 5.7 User Profile
+
+![image](https://github.com/nrathifa/INFO3305_GROUP_PROJECT_G5/assets/170484794/cbb75eb6-d655-49cf-bb46-3cb012706b73)
+
 
 ### 6.0 CHALLENGES/DIFFICULTIES
 Here are some of the key issues we have faced:

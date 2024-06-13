@@ -81,20 +81,19 @@ The purposes of the application are to:
   
 ### 5.0 PROJECT SYSTEM CAPTURED SCREEN
 
-    &nbsp; 5.1 Admin Page 
+&nbsp; 5.1 Admin Page 
+
+&nbsp; 5.2 Add book record
+
+&nbsp; 5.3 Admin Profile
+
+&nbsp; 5.4 User Page 
     
-    &nbsp; 5.2 Add book record
+&nbsp; 5.5 View book library
 
-    &nbsp; 5.3 Admin Profile
+&nbsp; 5.5 Genre
 
-    &nbsp; 5.4 User Page 
-    
-    &nbsp; 5.5 View book library
-
-    &nbsp; 5.5 Genre
-
-     &nbsp; 5.6 User Profile
-    
+&nbsp; 5.6 User Profile
     
 
 ### 6.0 CHALLENGES/DIFFICULTIES
